@@ -10,12 +10,12 @@ public class TestClass {
 	private void f1() {
 		System.out.println("test f1 failed ");
 	}
-	@Test
+	@Test(nRuns = 2)
 	void test1() {
 		f1(10);
 	}
 	@Test
-	void test() {
+	void test10() {
 		f1();
 	}
 	@BeforeEach
