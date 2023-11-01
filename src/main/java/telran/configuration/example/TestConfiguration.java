@@ -1,7 +1,8 @@
 package telran.configuration.example;
 
+import lombok.Data;
 import telran.configuration.annotation.Value;
-
+@Data
 public class TestConfiguration {
 	@Value("app.int:10")
 	int i;
@@ -13,10 +14,7 @@ public class TestConfiguration {
 	double d;
 	@Value("app.string:abcd")
 	String s;
-	@Override
-	public String toString() {
-		return "TestConfiguration [i=" + i + ", l=" + l + ", f=" + f + ", d=" + d + ", s=" + s + "]";
-	}
+	
 	
 	
 }
